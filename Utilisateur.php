@@ -16,12 +16,14 @@ class Utilisateur {
     private $nom;
     private $prenom;
     private $age;
+    private $adresse;
     private $region;
     private $email;
     
     function __construct(string $nom,
                         string $prenom,
                         int $age,
+                        string $adresse,
                         string $region,
                         string $email) {
         $this->nom=$nom;

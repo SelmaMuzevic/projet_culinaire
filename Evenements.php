@@ -12,16 +12,24 @@
  * @author selma
  */
 class Evenements {
-    public $petitdejeuner;
-    public $dejeuner;
-    public $collation;
-    public $dinner;
+    public $ID;
+    public $type;
+    public $dateHeure;
+    public $source;
+    public $niveau;
     
-    public function __construct(string $petitdejeuner, string $dejeuner, 
-            string $collation, string $dinner) {
-        $this->petitdejeuner = $petitdejeuner;
-        $this->dejeuner = $dejeuner;
-        $this->collation = $collation;
-        $this->dinner = $dinner;
+    
+     function __construct (string $ID, 
+                            string $type, 
+                            int $dateHeure, 
+                            string $source, 
+                            string $niveau) {
+        
+         $this->ID = $ID;
+         $this->type = $type;
+         $this->dateHeure = $dateHeure;
+         $this->source = $source;
+         $this->niveau = $niveau;
     }
+    
 }

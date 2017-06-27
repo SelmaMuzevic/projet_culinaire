@@ -3,13 +3,17 @@
 <head></head>
 
 <body>
-    <form action="contact.php" method="POST">
-        Nom :<input type="text" name="nom" /><br/> 
-        Email :<input type="text" name="email" /><br/> 
-        Message :<textarea name="message" rows="15" cols="30"></textarea><br/>
-        <input type="submit" name="submit" value="Envoyer" />
-
+    
+    <form action="membre.php" method="POST">
+    <label>Nom: <input type="text" name="nom"/></label><br/>
+    <label>Mot de passe: <input type="password" name="passe"/></label><br/>
+    <label>Confirmation du mot de passe: <input type="password" name="passe2"/></label><br/>
+    <label>Adresse e-mail: <input type="text" name="email"/></label><br/>
+    <label>Message: <textarea name="textarea" rows="10" cols="50"></textarea></label><br/>
+    <input type="submit" value="Me connecter"/>
+    
     </form>
+
 </body>
 
 </html>
