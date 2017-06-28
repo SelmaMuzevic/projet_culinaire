@@ -12,32 +12,52 @@
  * @author selma
  */
 class Utilisateur {
-    
+
     private $nom;
     private $prenom;
     private $age;
     private $adresse;
-    private $region;
     private $email;
+    private $login;
+    private $password;
     
-    function __construct(string $nom,
-                        string $prenom,
-                        int $age,
-                        string $adresse,
-                        string $region,
-                        string $email) {
-        $this->nom=$nom;
-        $this->prenom=$prenom;
-        $this->age=$age;
-        $this->region=$region;
-        $this->email=$email;
+    
+    function __construct($nom, $prenom, $age, $adresse, $email, $login, $password) {
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->age = $age;
+        $this->adresse = $adresse;
+        $this->email = $email;
+        $this->login = $login;
+        $this->password = $password;
     }
-    
-    function connexion() {
         
+    function getNom() {
+        return $this->nom;
     }
-    
-    function inscription(){
-        
+
+    function getPrenom() {
+        return $this->prenom;
     }
+
+    function getAge() {
+        return $this->age;
+    }
+
+    function getAdresse() {
+        return $this->adresse;
+    }
+
+    function getEmail() {
+        return $this->email;
+    }
+
+    function getLogin() {
+        return $this->login;
+    }
+
+    function getPassword() {
+        return $this->password;
+    }
+
 }

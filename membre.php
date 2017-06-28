@@ -1,8 +1,8 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-    header ('Location : contact.html');
-    exit();
+    header ('Location : connexion.php');
+    
 }
 
 ?><html>
@@ -12,7 +12,8 @@ if(!isset($_SESSION['login'])){
 </head>
 <body>
 Bienvenue !
-<?php echo htmlspecialchars(trim($_SESSION['login'])); 
+<?php 
+echo htmlspecialchars(trim($_SESSION['login'])); 
 ?> 
 <br />
 <a href="deconnexion.php">Déconnexion</a>
