@@ -15,17 +15,15 @@ class Utilisateur {
 
     private $nom;
     private $prenom;
-    private $age;
     private $adresse;
     private $email;
     private $login;
     private $password;
     
     
-    function __construct($nom, $prenom, $age, $adresse, $email, $login, $password) {
+    function __construct($nom, $prenom, $adresse, $email, $login, $password) {
         $this->nom = $nom;
         $this->prenom = $prenom;
-        $this->age = $age;
         $this->adresse = $adresse;
         $this->email = $email;
         $this->login = $login;
@@ -40,9 +38,6 @@ class Utilisateur {
         return $this->prenom;
     }
 
-    function getAge() {
-        return $this->age;
-    }
 
     function getAdresse() {
         return $this->adresse;

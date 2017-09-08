@@ -1,17 +1,8 @@
-<?php
-?><html>
+<?php 
 
-    <head></head>
+    // vérifier que le login éxiste dans la base de données
+    // récupéré l'utilisateur depuis la base de données
+    // comparer les mots de passe
+    // afficher un message de réussite !
 
-    <body>
-        <h1>Connectez-vous : </h1>
-        
-        <form action="membre.php" method="POST">
-            <label>Pseudo: <input type="text" name="login"/></label><br/>
-            <label>Mot de passe: <input type="password" name="password"/></label><br/>
-            <input type="submit" value="Me connecter"/>
-        </form>
-
-    </body>
-
-</html>
+?>
